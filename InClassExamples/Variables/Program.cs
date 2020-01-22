@@ -33,6 +33,23 @@ namespace Variables
 
             // MAKE IT DYNAMIC 
 
+            Console.WriteLine("Please enter your first name: >>");
+            firstName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your last name: >>");
+            lastName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your favorite number: >>");
+            string favoriteNumberAsString = Console.ReadLine();
+            favoriteNumber = Convert.ToInt32(favoriteNumberAsString);
+            //favoriteNumber = Convert.ToInt32(Console.ReadLine());
+
+
+           fullName = firstName + " " + lastName;
+
+            Console.WriteLine(fullName + " " + "has favorite number of" + " " + favoriteNumber + " " +
+                                    " \nwhich equates to crazy number of" + " " + crazyNumber);
+            //Console.WriteLine($"{fullName} + " " + "has favorite number of" + " " + favoriteNumber + " " + " \nwhich equates to crazy number of" + " " + crazyNumber);
             Console.ReadKey();
         }
     }
